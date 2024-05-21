@@ -1,0 +1,68 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 10px;
+}
+
+.logo {
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.nav-enllaç {
+    height: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.nav-enllaç i {
+    margin-right: 10px;
+}
+.nav-enllaç:hover {
+    background-color: rgb(241, 235, 235);
+    border-radius: 10%;
+}
+
+.xarxes {
+    margin-top: 20px;
+}
+.xarxes i {
+    margin-right: 10px;
+    color: gray;
+}
+
+.titol_portada {
+    font-size: x-large;
+    color: lightsalmon;
+    opacity: 75%;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Versió tauleta */
+@media (max-width: 720px) {
+    
+}
+
+/* Versió mòbil */
+@media (max-width: 500px) {
+    
+}
