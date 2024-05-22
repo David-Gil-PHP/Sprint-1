@@ -1,0 +1,71 @@
+* {
+    margin: 5px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.contenedor {
+    text-align: center;
+    border: #333 dotted;
+    gap: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.columna {
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px black solid;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.texto-columna {
+    font-size: 70%;
+}
+
+.btn-comprar {
+    background: salmon;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.btn-comprar:hover {
+    background: lightgrey;
+}
+
+@media (max-width: 1070px) {
+    .columna {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
