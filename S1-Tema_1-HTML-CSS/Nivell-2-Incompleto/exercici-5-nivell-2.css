@@ -1,0 +1,154 @@
+:root {
+    --main-font-family: Arial, Helvetica, sans-serif;
+}
+
+/***** CAPÇALERA *****/
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 10px;
+}
+
+.logo {
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+
+.nav-enllaç {
+    height: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--main-font-family);
+    color: gray;
+}
+.nav-enllaç i {
+    margin-right: 10px;
+}
+.nav-enllaç:hover {
+    background-color: rgb(241, 235, 235);
+    border-radius: 10%;
+}
+
+.xarxes {
+    margin-top: 20px;
+}
+.xarxes i {
+    margin-right: 10px;
+    color: gray;
+}
+
+.titol_portada {
+    font-size: x-large;
+    color: lightsalmon;
+    font-family: var(--main-font-family);
+    opacity: 75%;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/***** ARTICLES *****/
+.contenidor {
+    display: flex;
+}
+
+.contenidor-main {
+    display: flex;
+    background: lightgray;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.contenidor-articles {
+    flex-direction: column;
+    padding: 5px;
+    background: whitesmoke;
+    height: 350px;
+}
+
+.article-imatge {
+    background-image: url('images/sakura.jpg');
+    height: 33%;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-seccio {
+    font-family: var(--main-font-family);
+    background: salmon;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: x-large;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.article {
+    font-family: var(--main-font-family);
+    column-count: 2;
+    font-size: small;
+    color: gray;
+    height: 150px;
+}
+
+.leer-mas {
+    font-family: var(--main-font-family);
+    font-size: small;
+    text-decoration: none;
+    color: rgb(172, 170, 170);
+    position: relative;
+    bottom: 15px;
+}
+
+.aside {
+    margin-top: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    background: lightgray;
+    font-family: var(--main-font-family);
+    font-size: small;
+    text-align: center;
+    color: grey;
+}
+.aside-titol {
+    flex-direction: column;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(23, 22, 22);
+}
+
+/***** PEU DE PÀGINA *****/
+.peu-pagina {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 10px;
+    background: whitesmoke;
+}
+
+/* Versió tauleta */
+@media (max-width: 720px) {
+    
+}
+
+/* Versió mòbil */
+@media (max-width: 500px) {
+    
+}
