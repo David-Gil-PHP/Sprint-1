@@ -1,5 +1,12 @@
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
 body {
     max-width: 1200px;
+    margin: auto;
+    padding: 0;
 }
 
 .contenidor {
@@ -7,48 +14,30 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     background: black;
-    margin: 10px;
-    padding: 10px;
 }
 
 /* Pare 1 - Fill 1 */
 .contenidor1-1 {
     display: flex;
     background: purple;
-    margin: 10px;
-    padding: 10px;
 }
-
 .contenidor1-1-1 {
     flex-basis: 20%;
     background: coral;
-    margin: 10px;
-    padding: 10px;
 }
-
 .contenidor1-1-1-mitj {
     flex-basis: 60%;
     background: coral;
-    margin: 10px;
-    padding: 10px;
-} /* FI Pare 1 - Fill 1 */
+}
 
 /* Pare 1 - Fill 2 */
 .contenidor1-2 {
     background: orange;
-    margin: 10px;
-    padding: 10px;
 }
-
 .contenidor1-2-1 {
-    flex-grow: 1;
     background: yellow;
-    margin: 10px;
-    padding: 10px;
-} /* FI Pare 1 - Fill 2 */
-
-.seccio2 {
-    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
 }
 
 /* Pare 2 - Fill 1 */
@@ -56,51 +45,43 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-grow: 1;
-    gap: 10px;
+    height: auto;
     background: lightgray;
-    margin: 10px;
-    padding: 10px;
-} /* FI Pare 2 - Fill 1 */
-
+}
 .azul {
     background: blue;
+    color: white;
 }
-
 .celeste {
     background: lightskyblue;
     grid-column: span 2;
 }
+.seccio2 {
+    flex-direction: row;
+}
 
 /* Pare 2 - Fill 2 */
 .contenidor2-2 {
-    flex-direction: column;
-    flex-basis: 33%;
+    flex-basis: 20%;
     background: lightcoral;
-    margin: 10px;
-    padding: 10px;
 }
-
 .contenidor2-2 > div {
     background: lightgoldenrodyellow;
-    margin: 10px;
-    padding: 10px;
-} /* FI Pare 2 - Fill 2 */
+}
 
 /* Pare 3 - Fill 1 */
 .contenidor3-1 {
     background: moccasin;
-    margin: 10px;
-    padding: 10px;
 }
 
 /* Versió tauleta */
 @media (max-width: 720px) {
+    .contenidor1-1 {
+        flex-direction: column;
+    }
     .seccio2 {
         flex-direction: column;
         background: yellow;
-    }
-    .contenidor2-1 {
-        height: 80px;
     }
 }
 
@@ -109,9 +90,5 @@ body {
     .contenidor2-1 {
         display: flex;
         flex-direction: column;
-        height: 140px;
-    }
-    .azul, .celeste {
-        flex-grow: 1;
     }
 }
