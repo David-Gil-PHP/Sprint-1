@@ -1,0 +1,8 @@
+# Ignorar todos los archivos temporales en un directorio llamado .php_tmp
+.php_tmp/
+
+# Ignorar todos los archivos temporales en un directorio llamado .vscode
+.vscode/
+
+# Ignorar todos los archivos .DS_Store generados en macOS
+.DS_Store
