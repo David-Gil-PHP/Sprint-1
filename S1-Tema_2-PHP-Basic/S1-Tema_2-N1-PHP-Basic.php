@@ -74,16 +74,15 @@ function calcular(int $a, int $b, String $operacio) {
 
 // EXERCICI 4
 print "******* EXERCICI 4 *******\n";
-$num = 10;
+$num = 0;
 $saltComptador = rand(1, 5);
 $probabilitat = rand(0, 100);
 
-if ($probabilitat <= 50) $num = rand(1, 25);
-
-imprimirComptador($saltComptador, $num);
-
-function imprimirComptador($salt, $n) {
-
+if ($probabilitat <= 50)
+    imprimirComptador($saltComptador, rand(1, 25));
+else
+    imprimirComptador($saltComptador);
+function imprimirComptador($salt, $n = 10) {
     print("Comptador fins al número ".$n." de ".$salt." en ".$salt.":\n");
     for ($i = $salt; $i <= $n; $i = $i+$salt) {
         print($i."\n");
