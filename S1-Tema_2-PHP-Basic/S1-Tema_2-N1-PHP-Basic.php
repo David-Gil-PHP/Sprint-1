@@ -21,6 +21,9 @@ print(strlen($string))."\n";
 print(strrev($string))."\n";
 print($string." ".$curs)."\n";
 
+define("NOM", "David");
+echo "<h1>El meu nom és ".NOM."</h1>\n";
+
 // EXERCICI 3
 print "******* EXERCICI 3a *******\n";
 $x = 2; $y = 7;
@@ -45,9 +48,11 @@ print "La suma de totes les variables és ".($x + $y + $n + $m)."\n";
 print "El producte de totes les variables és ".($x * $y * $n * $m)."\n\n";
 
 // Calculadora
+$operacio = "*";
 print "******* EXERCICI 3b - Calculadora *******\n";
-print "L'operació matemàtica és: ".calculadora($n, $m, "/")."\n\n";
-function calculadora($a, $b, $operacio) {
+print "L'operació matemàtica és: ".calcular($n, $m, $operacio)."\n\n";
+function calcular(int $a, int $b, String $operacio) {
+
     switch ($operacio) {
         case "+":
             return $a + $b;
@@ -89,18 +94,21 @@ function imprimirComptador($n, $salt) {
 // EXERCICI 5
 print "******* EXERCICI 5 *******\n";
 $nota = rand(0, 100);
-$grau = "";
+$grau = verificarGrauEstudiant($nota);
+print("El grau de l'estudiant amb nota {$nota}% és: '{$grau}'\n\n");
 
-if ($nota >= 60)
-    $grau = "Primera Divisió";
-elseif ($nota >= 45 && $nota < 60)
-    $grau = "Segona Divisió";
-elseif ($nota >= 33 && $nota < 45)
-    $grau = "Tercera Divisió";
-else
-    $grau = "reprovarà";
+function verificarGrauEstudiant($nota) : String {
+    if ($nota >= 60)
+        $grau = "Primera Divisió";
+    elseif ($nota >= 45 && $nota < 60)
+        $grau = "Segona Divisió";
+    elseif ($nota >= 33 && $nota < 45)
+        $grau = "Tercera Divisió";
+    else
+        $grau = "reprovarà";
 
-print("El grau de l'estudiant amb nota ".$nota."% és: ".$grau."\n\n");
+    return $grau;
+}
 
 // EXERCICI 6
 print "******* EXERCICI 6 *******\n";
