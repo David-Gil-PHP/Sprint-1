@@ -31,7 +31,7 @@ abstract class Shape {
      *
      * @return float
      */
-    abstract public function calcularArea(float $ample, float $alt) : float;
+    abstract public function calcularArea() : float;
 
 }
 
@@ -48,8 +48,8 @@ class Triangle extends Shape {
      *
      * @return float Àrea del Triangle.
      */
-    public function calcularArea(float $ample, float $alt): float {
-        return ($ample * $alt) / 2;
+    public function calcularArea(): float {
+        return ($this->ample * $this->alt) / 2;
     }
 }
 
@@ -66,18 +66,17 @@ class Rectangle extends Shape {
      *
      * @return float Àrea del Rectangle.
      */
-    public function calcularArea(float $ample, float $alt): float {
-        return $ample * $alt;
+    public function calcularArea(): float {
+        return $this->ample * $this->alt;
     }
 }
 
 $a = 3.2; $b = 4.4;
-//$c = readline("Número: ");
 
 $triangle = new Triangle($a, $b);
-echo "L'àrea del Triangle és {$triangle->calcularArea($a, $b)}.\n";
+echo "L'àrea del Triangle és {$triangle->calcularArea()}.\n";
 
 $rectangle = new Rectangle($a, $b);
-echo "L'àrea del Rectangle és {$rectangle->calcularArea($a, $b)}.\n";
+echo "L'àrea del Rectangle és {$rectangle->calcularArea()}.\n";
 
 ?>
