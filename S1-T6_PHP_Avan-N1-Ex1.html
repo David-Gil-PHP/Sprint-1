@@ -1,0 +1,22 @@
+<!-- EXERCICI 1
+1. Crea un formulari HTML amb els camps que vulguis (almenys un nom o username).
+2. El formulari ha de tenir com a action un document PHP.
+3. El codi d’aquest document PHP haurà de mostrar els valors dels diferents camps del formulari mitjançant variables superglobals.
+4. Enregistra alguns d’aquests valors dins de variables de sessió.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+</head>
+<body>
+    <form action="S1-T6_PHP_Avan-N1-Ex1.php" method="POST">
+        Nom: <input type="text" name="nom" required><br>
+        Cognoms: <input type="text" name="cognoms" required><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
