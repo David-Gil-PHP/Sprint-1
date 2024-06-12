@@ -1,4 +1,0 @@
-Estudiant
- [x] Class constructor
- [x] Verificar grau
-
